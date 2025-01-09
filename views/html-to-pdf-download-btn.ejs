@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/html-to-pdf.css">
+    <title>pdf</title>
+</head>
+<body dir="rtl">
+    <div class="download-pdf-button">
+        <a href="/download-pdf/<%= user._id %>">Download as PDF</a>
+    </div>
+    <main>
+        <div class="image-box">
+            <!-- <img class="pdfImg" src="../pdf/image.png" alt=""> -->
+            <img class="pdfImg" src="https://res.cloudinary.com/dtcz2zuev/image/upload/v1736434508/sayma/eeuhwyegextpy7vgf4xe.png" alt="">
+
+            <!-- <img class="pdfImg" src="https://www.solidbackgrounds.com/images/2480x3508/2480x3508-white-solid-color-background.jpg" alt=""> -->
+            <div class="image-content">
+                <div class="part1">
+                    <div class="heading w-full text-center mb-4">
+                        <h1 class=" lg:text-4xl inline-block px-8 py-4 rounded-lg" style="border: 1px solid;font-size: 2.5vw; font-weight: bolder;">عقد استقدام عاملة منزل</h1>
+                    </div>
+                    <!-- <div class="second-line  font-semibold w-full px-4 py-2 rounded-sm flex items-center justify-between mb-4" style="border: 1px solid;">
+                        <div class="right-side-s-line">
+                            <p>الطرف الأول : مكتب مشاريع التعارف العالمية</p>
+                        </div>
+                        <div class="left-side-s-line">
+                            <p>رقم السجل التجاري : 1142831</p>
+                        </div>
+                    </div> -->
+                    <div class="second-line w-full px-4 py-2 rounded-sm flex items-center justify-between mb-4" style="border: 1px solid;">
+                        <div class="right-side-s-line">
+                            <p>الطرف الأول : الغوالي لجلب الأيدي العاملة</p>
+                        </div>
+
+                        <div class="left-side-s-line">
+                            <p>رقم السجل التجاري : 1465105</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                    
+                <div class="grid-container px-4 py-2 rounded-sm  font-semibold">
+                    <div style="width: max-content !important;">الطرف الثاني : <%= user.name %></div>
+                    <div>الرقم المدني : <%= user.alRaqaam %></div>
+                    <div>الرقم الماذونية : <%= user.raqamMadavnia %></div>
+                    <div>لعنوان المحافظة :   <%= user.alHafza %></div>
+                    <div>ولاية : <%= user.walad %></div>
+                    <div>الرقم الهاتف : <%= user.hataf %></div>
+                </div>
+                    
+
+                    <p class="kabab-ki-haddi  font-semibold">بتاريخ :<%= user.date.toLocaleDateString() %> اتفق الطرفان على مايلي :</p>
+                    
+                    <ol class=" font-semibold">
+                        <li>
+                            (1) يلتزم الطرف الأول باستقدام عاملة منزل للطرف الثاني بناءً على طلبه وحسب الشروط التالية <br>
+                            قيمه الاستقدام  : ( <%= user.mastaqdam %> ) ريال عماني والعاملة تدعي : ( <%= user.aamla %> )  رقم الجواز : ( <%= user.khaldil %> )  <br>
+                            الجنسية : <%= user.jins %>
+                             للعمل لدي الطرف الثاني بمهنه:<br>
+
+                            عامله منزل براتب شهري وقدره:  ( <%= user.yadfa %> )
+                            ريال عماني صافي بدون خصومات
+                        </li>
+                        <li>
+                            (2) يلتزم الطرف الأول بضمان العاملة لمده (180) مائه وثمانون يوم من تاريخ الإستقدام والضمان يشمل رفض العمل بدون <br> سبب اذا ثبت لديها إعاقة لا تمكنها من أداء العمل المتفق عليه - إذا كانت مصابة بأحد الأمراض المعدية أو بمرض مزمن أو <br> مرض عقلي و يثبت العجز الطبي بموجب شهادة طبية صادرة من مستشفي حكومي بالسطنة أو اذا تركت العمل لدي الطرف <br>الثاني
+                        </li>
+                        <li>
+                            (3) يلتزم الطرف الأول باستبدال العاملة خلال فترة الضمان وعلي الطرف الثاني دفع مبلغ خدمات تخليص المعاملات <br> للمكتب أما في حالة طلب ارجاع المبلغ فأنه يتم ارجاع مبلغ الاستقدام المبين في العقد                        
+                        </li>
+                        <li>
+                            (4) ( الضمان لايشمل الوفاة )                        
+                        </li>
+                        <li>
+                            (5) يجب توفير المأكل والمسكن المناسب وتوفير العلاج الطبي طوال فتره العمل لديه ،وعدم تشغيل العاملة في <br> تربية
+                            الحيوانات والدواجن وغسيل السيارات                        
+                        </li>
+                        <li>
+                            (6) في حالة إرجاع العاملة اول التنازل او الهروب فإن الطرف الأول غير مسؤول عن مبالغ وزارة العمل ( الماذونية ) <br> وعن
+                            الفحوصات الطبية او قيمة ( التأشيرة ( او قيمة البلاغ في مكتب سند او تذكرة السفر في حالات الهروب
+                        </li>
+                        <li>
+                            (7) علي الطرف الثاني دفع رواتب للعاملة ابتداء من أول شهر وكما هو محدد في العقد اعلاه وبدون خصومات للهاتف<br> او النت او الاغراض الشخصية للعاملة
+                        </li>
+                        <li>
+                            (8) يلتزم الطرف الثاني بتحرير عقد عمل من نسختين بينه وبين العامله                        </li>
+                    </ol>
+
+                    
+
+                    <div class="flex  font-semibold items-center justify-between px-8 mt-24">
+                        <div style="border-top: 1px solid ;" class="px-6">الطرف الأول / التوقيع والختم</div>
+                        <div style="border-top: 1px solid ;" class="px-6">الطرف الثاني / التوقيع</div>
+                    </div>
+                    
+                        
+            </div>
+            
+        </div>
+    </main>
+    
+</body>
+</html>

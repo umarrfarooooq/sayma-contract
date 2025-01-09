@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sayma</title>
+  </head>
+  <body>
+    <main>
+      <div class="container contact-form-page">
+        <form class="contactUsForm" action="/form" method="post">
+          <div class="first-two flex items-center justify-between gap-x-2">
+            <input
+              class="w-full"
+              required
+              placeholder="الطرف الثاني"
+              type="text"
+              name="naam"
+            />
+            <input
+              class="w-full"
+              required
+              placeholder="الرقم المدني"
+              type="number"
+              name="raqam"
+            />
+          </div>
+          <input
+            class="block w-full"
+            required
+            placeholder="الرقم الماذونية"
+            type="text"
+            name="madvia"
+          />
+          <input
+            class="block w-full"
+            required
+            placeholder="العنوان المحافظة"
+            type="text"
+            name="hafza"
+          />
+          <input
+            class="block w-full"
+            required
+            placeholder="ولاية"
+            type="text"
+            name="walid"
+          />
+          <input
+            class="block w-full"
+            required
+            placeholder="رقم الهاتف"
+            type="number"
+            name="hatif"
+          />
+          <input
+            class="block w-full"
+            required
+            placeholder="يوم الاحد بتاريخ"
+            type="date"
+            name="date"
+          />
+          <input
+            class="block w-full"
+            required
+            placeholder="قيمه الاستقدام"
+            type="number"
+            name="mastaqdam"
+          />
+          <input
+            class="block w-full"
+            required
+            placeholder="والعاملة تدعي"
+            type="text"
+            name="aamil"
+          />
+          <input
+            class="block w-full"
+            required
+            placeholder="رقم الجواز"
+            type="text"
+            name="khaldal"
+          />
+          <input
+            class="block w-full"
+            required
+            placeholder="الجنسية"
+            type="text"
+            name="jins"
+          />
+          <input
+            class="block w-full"
+            required
+            placeholder="شهري وقدره"
+            type="number"
+            name="yadfa"
+          />
+          <button
+            class="bg-blue-900 text-white px-4 py-2 mt-4 rounded-lg font-medium hover:bg-blue-800"
+          >
+            Download as pdf
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

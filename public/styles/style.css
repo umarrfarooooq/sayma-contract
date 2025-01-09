@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+body{
+    font-family: 'Tajawal', sans-serif !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contactUsForm input,
+.contactUsForm textarea,
+.contactUsForm select{
+    border: .7px solid rgba(66, 66, 66, 0.3);
+    margin-block: .5rem;
+    padding: 1rem 8rem 1rem 1rem;
+    border-radius: 6px;
+    outline: none;
+}
+.container{
+  margin: auto !important;
+  padding-block:2rem ;
+}
+
+
+@media (max-width:1640px){
+    .contact-form-page{
+        flex-direction: column;
+    }
+
+    .contact-support{
+        margin-top: 5rem;
+    }
+
+    
+}
+@media (max-width:1077px){
+    .contactUsForm input,
+    .contactUsForm textarea,
+    .contactUsForm select{
+    width: 100%;
+}
+}
+@media (max-width:1000px){
+    .contact-form-page{
+        padding-inline: 6rem !important;
+    }
+    .first-two{
+      flex-direction: column !important;
+      gap: 0;
+    }
+    .logo-png{
+        width: 10rem !important;
+    }
+}
+@media (max-width:520px){
+    .contact-form-page{
+        padding-inline: 4rem !important;
+    }
+    .logo-png{
+        width: 9rem !important;
+    }
+}
+@media (max-width:450px){
+    
+.contactUsForm input,
+.contactUsForm textarea,
+.contactUsForm select{
+    border: .7px solid rgba(66, 66, 66, 0.3);
+    margin-block: .5rem;
+    padding: 1rem 3rem 1rem 1rem;
+    border-radius: 6px;
+    outline: none;
+}
+.logo-png{
+    width: 5rem !important;
+}
+}
+@media (max-width:380px){
+    .contact-form-page{
+        padding-inline: 2rem !important;
+    }
+    .main-c-p-content{
+        margin-inline: .2rem !important;
+        padding-inline: 2rem !important;
+    }
+    .logo-png{
+        width: 4.5rem !important;
+    }
+}
