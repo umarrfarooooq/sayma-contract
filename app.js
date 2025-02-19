@@ -142,7 +142,7 @@ app.get('/download-pdf/:userId', async (req, res) => {
         // await page.goto(`http://localhost:8081/pdf/${userId}`,{
         //     waitUntil:"networkidle2"
         // })
-        await page.goto(`https://contract.saymamanpower.com/pdf/${userId}`,{
+        await page.goto(`${process.env.BASE_URL}pdf/${userId}`,{
             waitUntil:"networkidle2"
         })
 
