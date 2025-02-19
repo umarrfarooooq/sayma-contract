@@ -171,6 +171,14 @@ app.get('/download-pdf/:userId', async (req, res) => {
     }
 });
 
+// location / {
+//     proxy_pass http://62.72.24.32:8081;
+//     proxy_http_version 1.1;
+//     proxy_set_header Upgrade $http_upgrade;
+//     proxy_set_header Connection 'upgrade';
+//     proxy_set_header Host $host;
+//     proxy_cache_bypass $http_upgrade;
+//     }
 
 
 
