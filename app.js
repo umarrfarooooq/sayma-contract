@@ -133,10 +133,10 @@ app.get("/download-pdf/:userId", async (req, res) => {
       headless: "new",
       args: [
         "--no-sandbox",
-        "--disable-setuid-sandbox",
-        "--disable-gpu",
-        "--disable-dev-shm-usage",
-        "--single-process",
+        // "--disable-setuid-sandbox",
+        // "--disable-gpu",
+        // "--disable-dev-shm-usage",
+        // "--single-process",
       ],
     });
     const page = await browser.newPage();
